@@ -1,0 +1,36 @@
+{
+  "name": "my-webpack",
+  "version": "1.0.0",
+  "description": "This repo is used to store the configuration files for my webpack set up. Using this webpack configuration will allow a basic setup of minifying JS and CSS files, uses Babel for transpiling newer JS to older vanilla JS for older browser support, and uses PostCSS for auto adding vendor prefixes to CSS properties. \r ## Features\r ---\r - Minifies JS and CSS\r - Transpiles SCSS files to CSS\r - Uses Babel to transpile new JS code to older vanilla JS code for older browsers\r - Custom entry points for specific files\r - Extracts CSS into their own separate files\r - Creates source maps for JS and CSS files\r - Auto adds vendor prefixes to CSS properties",
+  "main": "postcss.config.js",
+  "scripts": {
+    "devbuild": "webpack --config webpack.config.js --mode development",
+    "devbuild:watch": "webpack --watch --config webpack.config.js --development",
+    "prodbuild": "webpack --config webpack.config.js --mode production"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/eko-develops/my-webpack.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/eko-develops/my-webpack/issues"
+  },
+  "homepage": "https://github.com/eko-develops/my-webpack#readme",
+  "devDependencies": {
+    "@babel/core": "^7.16.0",
+    "@babel/preset-env": "^7.16.4",
+    "babel-loader": "^8.2.3",
+    "css-loader": "^6.5.1",
+    "mini-css-extract-plugin": "^2.4.5",
+    "postcss": "^8.4.4",
+    "postcss-loader": "^6.2.1",
+    "postcss-preset-env": "^7.0.1",
+    "sass": "^1.44.0",
+    "sass-loader": "^12.3.0",
+    "webpack": "^5.64.4",
+    "webpack-cli": "^4.9.1"
+  }
+}
