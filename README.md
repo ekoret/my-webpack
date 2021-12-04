@@ -1,7 +1,6 @@
 # my-webpack
 This repo is used to store the configuration files for my webpack set up. Using this webpack configuration will allow a basic setup of minifying JS and CSS files, uses Babel for transpiling newer JS to older vanilla JS for older browser support, and uses PostCSS for auto adding vendor prefixes to CSS properties. 
 ## Features
----
 - Minifies JS and CSS
 - Transpiles SCSS files to CSS
 - Uses Babel to transpile new JS code to older vanilla JS code for older browsers
@@ -11,7 +10,6 @@ This repo is used to store the configuration files for my webpack set up. Using 
 - Auto adds vendor prefixes to CSS properties
 
 ## Technologies
----
 ### Developer Dependencies  
 These are all the packages that are needed to get this webpack configuration started.
 - @babel/core
@@ -28,7 +26,6 @@ These are all the packages that are needed to get this webpack configuration sta
 - webpack-cli
 
 ## NPM Scripts
----
 This script will tell webpack to look for the config file located in the current directory with the name "**webpack.config.js**", and build all the files in development. Building the project in development will show more information within the files for easier debugging.
 ```
 "devbuild": "webpack --config webpack.config.js --mode development"
@@ -43,9 +40,7 @@ For this script, it will bundle and transpile the JS and CSS files in a "product
 ```
 
 ## Todo
----
 - Finish the README.md
 
 ## References
----
 - https://webpack.js.org/concepts/
